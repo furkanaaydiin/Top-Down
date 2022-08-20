@@ -17,6 +17,7 @@ public class Bullet_Controllers : MonoBehaviour
     void Start()
     {
         targer =Camera.main.ScreenToWorldPoint(Input.mousePosition);    
+        Destroy(gameObject,2f); 
     }
 
     
@@ -27,7 +28,7 @@ public class Bullet_Controllers : MonoBehaviour
             targer,
             speed* Time.deltaTime
         );
-        Destroy(gameObject,2f); 
+ 
     }
     
    

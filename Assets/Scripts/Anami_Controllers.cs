@@ -21,10 +21,7 @@ public class Anami_Controllers : MonoBehaviour
             playerPos.position,
             speed * Time.deltaTime
         );
-        if(head <=0)
-        {
-            Destroy(gameObject);
-        }
+       
 
         
     }
@@ -38,6 +35,11 @@ public class Anami_Controllers : MonoBehaviour
         if(col.tag == "bullet")
         {
              head--;
+             if(head <=0)
+             {
+                 Destroy(gameObject);
+                 StaticEvents.OnEnemyKill.Invoke();
+             }
         }
         
     }
