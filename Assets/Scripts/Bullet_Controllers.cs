@@ -2,11 +2,13 @@ using UnityEngine;
 
 
 
+
 public class Bullet_Controllers : MonoBehaviour
 {
 
     private Vector2 targer;
     public float speed;
+    
     
 
     
@@ -27,9 +29,6 @@ public class Bullet_Controllers : MonoBehaviour
         );
         Destroy(gameObject,2f); 
     }
-
-
-
     
-    
+   
 }

@@ -1,13 +1,12 @@
 using UnityEngine;
 
+
 public class Gun : MonoBehaviour
 {
     
     private Vector3 mousePos;
     public GameObject Cross;
-
     public GameObject bullent;
-
     
 
     
@@ -35,6 +34,9 @@ public class Gun : MonoBehaviour
         {
            Instantiate(bullent , transform.position , Quaternion.identity);
         }
+    
+        
+       
 
 
 

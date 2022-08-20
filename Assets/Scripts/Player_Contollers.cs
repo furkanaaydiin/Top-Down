@@ -1,6 +1,7 @@
 using UnityEngine;
 
 
+
 public class Player_Contollers : MonoBehaviour
 {
     [Header("component")]
@@ -11,11 +12,8 @@ public class Player_Contollers : MonoBehaviour
     public float speed;
     private Vector2 movoment;  
 
-
     
-
-    
-    void Update()
+     void Update()
     {
         movoment.x = Input.GetAxis("Horizontal");
         movoment.y = Input.GetAxis("Vertical");
@@ -38,6 +36,7 @@ public class Player_Contollers : MonoBehaviour
              animator.SetBool("isRunning" , false);
         }
     }
+     
 
     
     
