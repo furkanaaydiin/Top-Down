@@ -12,6 +12,10 @@ public class Player_Contollers : MonoBehaviour
     public float speed;
     private Vector2 movoment;  
 
+    Bell_Controllers bell_controllers;
+   
+
+
     
      void Update()
     {
@@ -36,7 +40,17 @@ public class Player_Contollers : MonoBehaviour
              animator.SetBool("isRunning" , false);
         }
     }
-     
+    
+    private void OnTriggerEnter(Collider col)
+    {
+        if(col.CompareTag("enemi"))
+        {
+            bell_controllers =GetComponent<Bell_Controllers>();
+            bell_controllers.CanSistemi();
+            
+            
+        }
+    }
 
     
     

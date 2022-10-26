@@ -6,14 +6,10 @@ public class Anami_Controllers : MonoBehaviour
     private Transform playerPos;
     public float speed;
     private int head = 3;
-
- 
     void Start()
     {
         playerPos = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
-
-    
     void Update()
     {
         transform.position = Vector2.MoveTowards(
@@ -25,11 +21,6 @@ public class Anami_Controllers : MonoBehaviour
 
         
     }
-    
-      
-    
-
-    
     private void OnTriggerEnter2D(Collider2D col)
     {
         if(col.tag == "bullet")

@@ -6,6 +6,9 @@ TagManager:
   tags:
   - bullet
   - enemi
+  - bel1
+  - bel2
+  - bel3
   layers:
   - Default
   - TransparentFX
